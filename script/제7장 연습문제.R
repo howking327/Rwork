@@ -59,7 +59,16 @@ mpg2 <- subset(mpg, hwy >= 12 & hwy <= 37)
 boxplot(mpg2$hwy)
 
 # 05. iris 데이터셋을 대상으로 8:2비율로 sampling하여 train과 test 셋을 만드시오.
-# 정답 확인 필요
+dim(iris)
+
+idx <- sample(x = nrow(iris), size = nrow(iris)*0.8)
+
+train <- iris[idx, ]
+test <- iris[-idx, ]
+
+dim(train)
+dim(test)
+
 
 
 
