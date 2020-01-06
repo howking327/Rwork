@@ -167,8 +167,8 @@ str(fgender2)
 # mode vs class
 # mode() : 자료형 반환
 # class() : 자료구조 반환
-mode(fgender)
-class(fgender)
+mode(fgender) #"numeric"
+class(fgender) #"factor"
 
 # Factor형 고려사항
 num <- c(4, 2, 4, 2)
