@@ -176,7 +176,7 @@ head(iris)
 
 #칼럼단위 정렬
 sort(iris$Sepal.Length) #오름차순(내용) 정렬
-sort(iris$Sepal.Length, decreasing = T)
+sort(iris$Sepal.Length, decreasing = T) # decreasing = T : 내림차순
 
 #행단위 정렬
 dim(iris)
@@ -240,11 +240,9 @@ r3 <- rbinom(n, size = 1, prob = 0.25)
 r3
 
 # 4. 종자값(seed)
-set.seed(123)
+set.seed(1234)
 r <- rnorm(10)
 r
-
-
 
 
 
